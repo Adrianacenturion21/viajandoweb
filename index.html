@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajando</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/ec80d4ce69.js" crossorigin="anonymous"></script>
+    <!--Bootstrap V.5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>  
+    <header class="header">
+        <div class="header__index">
+            <a href="./index.html">
+                <img class="header__logo" src="./imagenes/LogoNuevo.svg" alt="logo" class="">
+            </a>
+            <h2 class="header__titulo">Viajando</h2>
+        </div>
+        <div class="menuResponsive"><!--NAVBAR BOOTSTRAP-->
+            
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/vuelos.html">Vuelos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/hoteles.html">Hoteles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/paquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./pages/resenas.html">Reseñas</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        
+  </div>
+  <!--Menu Desktop-->
+  <div class="menuDesktop">
+      <nav class="navbar__nav">
+        <ul class="navbar__nav__list">
+          <li class="navbar__nav__item"><a class="navbar__nav__link" href="./index.html">Inicio</a></li>
+          <li class="navbar__nav__item"><a class="navbar__nav__link" href="./pages/vuelos.html">Vuelos</a></li>
+          <li class="navbar__nav__item"><a class="navbar__nav__link" href="./pages/hoteles.html">Hoteles</a></li>
+          <li class="navbar__nav__item navbar__nav__item--submenu"><a class="navbar__nav__link" href="./pages/paquetes.html">Paquetes</a></li>
+          <li class="navbar__nav__item"><a class="navbar__nav__link" href="./pages/resenas.html">Reseñas</a></li>
+        </ul>
+      </nav>
+    </div>
+        <div class="header__section">
+            <div>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Ingresar</button>
+                    <button class="btn btn-primary" type="button">Registrarse</button>
+                  </div>
+            </div>
+            <div class="header__buscador">
+                <label for="buscar"><i class="fas fa-search"></i></label>
+                <input class="header__buscador__input" type="search" name="buscar" id="buscar" placeholder="A donde queres ir?" required >
+            </div>
+        </div>
+    </header>
+    <main class="main"> <!--INICIA CONTENIDO-->
+        <!--Presentación-->
+        <div class="intro">
+            <!-- Imagen como background en css -->
+        </div>
+        <div class="intro__secciones">
+          <div class="intro__texto">
+            <p>Encontrá el hotel de tus sueños, el vuelo a la mejor tarifa o el paquete ideal. Todo lo que necesitas está en Viajando </p>
+        </div>
+        <!--SECCION BOTONES NAV-->
+        <div id="secciones">
+            <div class="seccion">
+                <img src="./imagenes/vuelos.jpg" alt="Vuelos" class="seccion-img">
+                <a href="./pages/vuelos.html" target="blank">
+                    <h3 class="seccion-titulo">Buscá un vuelo</h3>
+                </a>
+            </div>
+            <div class="seccion">
+                <img src="./imagenes/hoteles.jpg" alt="Hoteles" class="seccion-img">
+                <a href="./pages/hoteles.html" target="blank">
+                    <h3 class="seccion-titulo">Buscá un hotel</h3>
+                </a>
+            </div>
+            <div class="seccion">
+                <img src="./imagenes/flat-lay-camera-and-passport-arrangement.jpg" alt="paquetes" class="seccion-img">
+                <a href="./pages/paquetes.html" target="blank">
+                    <h3 class="seccion-titulo">Elegí un paquete</h3>
+                </a>
+            </div>
+            <div class="seccion">
+                <img src="./imagenes/turista_de_espaldas.jpg" alt="Reseñas" class="seccion-img">
+                <a href="./pages/resenas.html" target="blank">
+                    <h3 class="seccion-titulo">Inspirá a un viajero</h3>
+                </a>
+            </div>
+        </div>
+        </div>
+        <section class="section__boxes">
+            <h2 class="section__titulo">Destinos Exclusivos</h2>
+        </section>
+        <!--SECCION CARDS ANIMADAS-->
+        <div class="seccionCards">
+            <div class="card-index-cards"> 
+                <img src="./imagenes/cuba.jpg" alt="cuba"/>
+                <div class="text">
+                  <h1>LA HABANA</h1>
+                  <h2 class="animate-text">$65.000</h2>
+                  <p class="animate-text">10 noches - Aéreos, hotel y traslado. Consultanos!</p>
+                </div>
+              </div>
+              <div class="card-index-cards"> 
+                  <img src="./imagenes/disney.jpg" alt="disney"/>
+                  <div class="text">
+                    <h1>DISNEY</h1>
+                    <h2 class="animate-text">$83.000</h2>
+                    <p class="animate-text">5 noches - Aéreos, hotel y traslados. Consultanos!</p>
+                  </div>
+                </div>
+                <div class="card-index-cards"> 
+                  <img src="./imagenes/playa.jpg" alt="playa"/>
+                  <div class="text">
+                    <h1>BAHAMAS</h1>
+                    <h2 class="animate-text">$56.000</h2>
+                    <p class="animate-text">7 noches - Aéreos, hotel y traslados. Consultanos!</p>
+                  </div>
+                </div>
+                <div class="card-index-cards"> 
+                  <img src="./imagenes/jirafas.jpg" alt="playa"/>
+                  <div class="text">
+                    <h1>MADAGASCAR</h1>
+                    <h2 class="animate-text">$76.000</h2>
+                    <p class="animate-text">5 noches - Aéreos, hotel y traslados. Consultanos!</p>
+                  </div>
+                </div> 
+                <div class="card-index-cards"> 
+                  <img src="./imagenes/cancun.jpg" alt="playa"/>
+                  <div class="text">
+                    <h1>CANCÚN</h1>
+                    <h2 class="animate-text">$63.000</h2>
+                    <p class="animate-text">6 noches - Aéreos, hotel y traslados. Consultanos!</p>
+                  </div>
+                </div> 
+                <div class="card-index-cards"> 
+                  <img src="./imagenes/venecia.jpg" alt="playa"/>
+                  <div class="text">
+                    <h1>VENEZIA</h1>
+                    <h2 class="animate-text">$76.000</h2>
+                    <p class="animate-text">7 noches - Aéreos, hotel y traslados. Consultanos!</p>
+                  </div>
+                </div>
+        </div>
+        <!--SECCIÓN CARDS INFORMACIÓN (BOOTSTRAP)-->
+        <div class="container">
+            <div class="container-title">
+                <h3 class="container-title-text">Información</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">¿Cómo comprar en Viajando?</h5>
+                      <p class="card-text">En Viajando podes comprar todo para tus vacaciones muy fácilmente. Primero ingresá la info de tu viaje en el buscador. Compará entre las opciones que te aparecen y elegí la que mejor se adapte a vos desde el boton Comprar. Cargá los datos de los pasajeros, seleccioná el medio de pago y completá los datos requeridos. Confirmá y listo! Te enviamos los vouchers por mail y ya empezas a disfrutar Viajando. Así de fácil!</p>
+                      <a href="#" class="btn btn-info">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body bg-pink">
+                      <h5 class="card-title">Documentación necesaria</h5>
+                      <p class="card-text">Tené a mano tu documento de identidad, nombre apellido y fecha de nacimiento de los pasajeros. Antes de la fecha de viaje, revisá el detalle de tu reserva en Mi Cuenta para conocer las visas y vacunas exigidas en el destino, incluido las escalas, conexiones, tours y paradas durante el viaje. Los menores requieren de autorización obligatoria. Recordá que ante cualquier duda estamos para ayudarte.</p>
+                      <a href="#" class="btn btn-info">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Cambios y Cancelaciones</h5>
+                        <p class="card-text">Gestioná el cambio de tu reserva desde Mi Cuenta, chequeando las condiciones de las mismas al momento que realizaste la reserva. Podes cancelar una reserva para todos o algunos de los pasajeros. Recordá revisar las políticas de cambio y cancelación de cada proveedor. Cualquier consulta que tengas no dudes en comunicarte por cualquiera de nuestras vías, te asistiremos inmediatamente.</p>
+                        <a href="#" class="btn btn-info">Ver más</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Elegí Viajando</h5>
+                        <p class="card-text">Tu tranquilidad es nuestro motor para garantizarte confianza y seriedad brindandote un viaje sin preocupaciones y que tu experiencia sea la mejor. Nuestro equipo de asesores estará disponible para cualquier necesidad antes, durante y luego del viaje. Chequeá las reseñas para encontrar tips importantes. Acordate de contarnos tu experiencia para inspirar a otros viajeros!</p>
+                        <a href="#" class="btn btn-info">Reseñar</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </main>
+    <footer id="footer">
+        <div class="footer__section">
+            <div class="header__index">
+              <a href="./index.html">
+                <img class="header__logo" src="../imagenes/LogoNuevo.svg" alt="logo" class="">
+              </a>
+                <h2 class="header__titulo">Viajando</h2>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="">Términos y Condiciones</a></li>
+                    <li class="footer__item"><a class="footer__link" href="">Políticas de Privacidad</a></li>
+                    <li class="footer__item"><a class="footer__link" href="">Ayuda y Soporte</a></li>
+                </ul>
+            </div>                      
+            <div class="footer__redes">
+                <a class="footer__icon instagram" href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a class="footer__icon facebook" href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+                <a class="footer__icon whatsapp" href="https://wa.me/5491112345678" target="blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer__contacto">
+                <h2>Contáctanos</h2>
+                <p><icon><i class="fas fa-envelope-square"></i></icon> contacto@viajando.com</p>
+                <span><icon><i class="fas fa-phone-square-alt"></i></icon> 011 1234-1234 
+                    Lun a Vie 8 a 18 hs</span>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <p>©Viajando 2021 • Todos los derechos reservados • Diseño y Desarrollo Web por <a href="">Adriana Centurión</a></p>
+        </div>
+     </footer>
+
+    
+
+
+
+    <!--Bootstrap JS y Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

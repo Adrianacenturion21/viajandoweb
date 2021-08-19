@@ -1,0 +1,107 @@
+/*ESTILOS DEL FOOTER*/
+#footer {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    border-top: solid rgb(77, 74, 74);
+    background-color: rgb(219, 219, 219);
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    align-items: center;
+}
+.footer__contacto {
+    color: #FE0057;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    left: 0;
+}
+.footer__nav {
+    padding: 10px;
+    
+}
+.footer__item {
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #FE0057;
+    
+    
+}
+
+.footer__redes {
+    padding: 10px;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer__icon {
+    color: #fff;
+    display: block;
+    margin: 3px;
+    padding: 0.5rem;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    border: 2px solid transparent;
+    
+}
+.footer__icon:hover{
+    transform: rotate(360deg);
+    background: #fff;
+}
+
+.footer__icon.instagram:hover,.footer__icon.facebook:hover,.footer__icon.whatsapp:hover {
+    border: 2px solid;
+    background: white;
+    color: #FE0057;
+    border-color: #FE0057;
+}
+.footer__icon.instagram {
+    background: #FE0057;
+}
+.footer__icon.instagram:hover {
+    color: #FE0057;
+    border-color: #FE0057;
+}
+
+.footer__icon.facebook {
+    background: #2a4deb;
+}
+  
+.footer__icon.facebook:hover {
+    color: #2a4deb;
+    border-color: #2a4deb;
+}
+
+.footer__icon.whatsapp {
+    background: #2aeb5a;
+}
+  
+.footer__icon.whatsapp:hover {
+    color: #2aeb5a;
+    border-color: #2aeb5a;
+}
+.footer__rights {
+    width: 100%;
+    // background-color: rgb(121, 118, 118);
+    text-align: center;
+}

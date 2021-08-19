@@ -1,0 +1,140 @@
+.inicioresenas{
+   background-color: #1E26EB;
+    width: 65%;
+    margin: auto;
+
+}
+
+.viajeros {
+    margin: 0%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+
+.seccionReseñas {
+    position: relative;
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    border-radius: 20px;
+    border-style: solid ;
+    border-color: #FE0057;
+    display: grid;
+    margin: auto;
+    margin-bottom: 15px;
+    
+}
+
+.seccionReseñas__titulo {
+    margin: 3px;
+    padding: 10px;
+    border-style: none;
+    color: white;
+    background-color: #1E26EB;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 2.3rem;
+}
+
+.seccionReseñas__item {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.seccionReseñas label{
+    padding: 12px;
+}
+
+.seccionReseñas__item textarea {
+    width: 100%;
+    grid-column: 1 / -1;
+    
+    
+}
+.seccionReseñas input {
+    border-radius: 20px;
+    
+}
+
+.reseña {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.reseña__uno {
+    display: flex;
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.reseña__uno input {
+    margin: 9px;
+}
+
+.seccionReseñas__terminos {
+    grid-column: 1 / -1;
+    text-align: center;
+    
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .seccionReseñas {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        margin-bottom: 15px;
+        
+    }
+    .seccionReseñas__item {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1rem;
+    }
+    .viajeros {
+        margin: 0%;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    
+ }
+
+ @media screen and (min-width:481px) and (max-width:768px) {
+    .seccionReseñas {
+        width: 80%;
+    }
+    .viajeros {
+    margin: 0%;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+    }
+
+    
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .seccionReseñas {
+        width: 80%;
+    }
+
+    
+}

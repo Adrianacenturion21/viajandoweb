@@ -1,0 +1,80 @@
+@import "header";
+@import "main";
+@import "footer";
+@import "vuelos";
+@import "paquetes";
+@import "resenas";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MEDIA QUERIES INDEX
+
+480PX
+768PX
+1024PX*/
+
+@media screen and (max-width:480px) {
+    
+
+    
+}
+
+@media screen and (max-width:768px) {
+   
+
+   
+}
+
+@media screen and (max-width:1024px) {
+   
+
+   
+}
+
+@media screen and (max-width:320px) {
+    
+
+    .card-index {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
+@media screen and (max-width:480px) {
+    .card-index {
+        display: flex;
+        flex-direction: column;
+    }
+    .header, .footer__section {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+@media screen and (max-width:768px) {
+    .card-index {
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .header, .footer__section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .card-index {
+       grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .card-index {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
