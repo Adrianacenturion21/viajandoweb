@@ -210,36 +210,6 @@ Breakpoints utilizados:
 768PX
 1024PX*/
 
-@media screen and (max-width:480px) {
-    .intro {
-    width: 100%;
-    height: 100%;
-    background-attachment: scroll;
-    }
-    .seccionCards {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .card-index-cards {
-    width: 260px;
-    height: 300px;
-   }
-   
-}
-
-@media screen and (max-width:768px) {
-    .intro {
-        width: 100%;
-        height: 100%;
-        background-attachment: scroll;
-    }
-   .seccionCards {
-    grid-template-columns: repeat(2,1fr);
-   }
-   .card-index-cards {
-    width: 260px;
-    height: 300px;
-   }
-}
 
 @media screen and (max-width:1024px) {
     .intro {
@@ -258,3 +228,40 @@ Breakpoints utilizados:
 
        
 }
+
+@media screen and (max-width:768px) {
+    .intro {
+        width: 100%;
+        height: 100%;
+        background-attachment: scroll;
+    }
+   .seccionCards {
+       display: grid;
+        grid-template-columns: repeat(2,1fr);
+   }
+   .card-index-cards {
+    width: 260px;
+    height: 300px;
+   }
+}
+
+@media screen and (max-width:480px) {
+    .intro {
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+    }
+    .seccionCards {
+        // max-width: 480px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card-index-cards {
+    // width: 220px;
+    // height: 280px;
+        width: 100%;
+   }
+   
+}
+
+

@@ -423,38 +423,6 @@ Breakpoints utilizados:
 480PX
 768PX
 1024PX*/
-@media screen and (max-width: 480px) {
-  .intro {
-    width: 100%;
-    height: 100%;
-    background-attachment: scroll;
-  }
-  .seccionCards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .card-index-cards {
-    width: 260px;
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .intro {
-    width: 100%;
-    height: 100%;
-    background-attachment: scroll;
-  }
-  .seccionCards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .card-index-cards {
-    width: 260px;
-    height: 300px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .intro {
     width: 100%;
@@ -468,6 +436,41 @@ Breakpoints utilizados:
   .card-index-cards {
     width: 290px;
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+  }
+  .seccionCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card-index-cards {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+  }
+  .seccionCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .card-index-cards {
+    width: 100%;
   }
 }
 
@@ -846,7 +849,24 @@ Breakpoints utilizados:
   text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+  .seccionReseñas {
+    width: 80%;
+  }
+  .viajeros {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seccionReseñas {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .seccionReseñas {
     width: 100%;
     height: auto;
@@ -874,27 +894,6 @@ Breakpoints utilizados:
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 5px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .seccionReseñas {
-    width: 80%;
-  }
-  .viajeros {
-    margin: 0%;
-    padding: 10%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .seccionReseñas {
-    width: 80%;
   }
 }
 

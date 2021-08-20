@@ -87,7 +87,35 @@
     
 }
 
-@media screen and (min-width:320px) and (max-width:480px) {
+@media screen and (max-width:1024px) {
+    .seccionReseñas {
+        width: 80%;
+    }
+    .viajeros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    
+        }
+    
+}
+
+@media screen and (max-width:768px) {
+    .seccionReseñas {
+        width: 80%;
+    }
+    // .viajeros {
+    // margin: 0%;
+    // padding: 10%;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 15px;
+
+    // }
+
+    
+}
+
+@media screen and  (max-width:480px) {
     .seccionReseñas {
         width: 100%;
         height: auto;
@@ -115,26 +143,6 @@
     
  }
 
- @media screen and (min-width:481px) and (max-width:768px) {
-    .seccionReseñas {
-        width: 80%;
-    }
-    .viajeros {
-    margin: 0%;
-    padding: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+ 
 
-    }
 
-    
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .seccionReseñas {
-        width: 80%;
-    }
-
-    
-}
