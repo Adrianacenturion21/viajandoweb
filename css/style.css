@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background-color: ghostwhite;
+  background-color: white;
   height: auto;
   width: 100%;
   display: -webkit-box;
@@ -68,14 +68,15 @@
 
 .navbar__nav__item {
   padding: 5px 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: bolder;
   color: #1E26EB;
+  cursor: pointer;
 }
 
 .navbar__nav__item:hover {
-  background-color: #19D3DB;
+  background-color: #47f4fa;
 }
 
 .navbar__nav__item--submenu {
@@ -170,6 +171,9 @@ Breakpoints utilizados:
     width: 100%;
     left: 0;
   }
+  .header__buscador {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -186,7 +190,7 @@ Breakpoints utilizados:
 }
 
 .main {
-  margin-bottom: 15px;
+  background-image: url(../imagenes/fondoweb.jpg);
 }
 
 /*Presentación*/
@@ -220,10 +224,10 @@ Breakpoints utilizados:
 }
 
 .intro__texto {
-  font-family: 'Arial Narrow Bold', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: normal;
   font-size: 2rem;
-  color: #1E26EB;
+  color: white;
 }
 
 /*Secciones BOTON NAV*/
@@ -307,6 +311,7 @@ Breakpoints utilizados:
   margin-top: 15px;
   padding: 1%;
   background-color: #1E26EB;
+  border: solid 1px white;
   width: 100%;
   height: auto;
 }
@@ -319,9 +324,9 @@ Breakpoints utilizados:
 
 /*SECCION CARDS ANIMADAS INDEX*/
 .seccionCards {
-  margin: 20px;
-  padding: 50px;
   width: 90%;
+  margin: auto;
+  padding: 0;
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -339,7 +344,6 @@ Breakpoints utilizados:
   position: relative;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  overflow: hidden;
   color: #FE0057;
   font-family: sans-serif;
   text-align: center;
@@ -349,6 +353,7 @@ Breakpoints utilizados:
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   z-index: 0;
@@ -412,10 +417,21 @@ Breakpoints utilizados:
   opacity: 1;
 }
 
-/*Estilos Bootstrap div Informacion*/
-.container {
-  margin-top: 5%;
-  margin-left: 1%;
+/*Estilos Informacion*/
+#informacion {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*MEDIA QUERIES 
@@ -437,6 +453,10 @@ Breakpoints utilizados:
     width: 290px;
     height: 400px;
   }
+  #informacion {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -455,6 +475,13 @@ Breakpoints utilizados:
     width: 260px;
     height: 300px;
   }
+  .section__titulo {
+    font-size: 1.5rem;
+  }
+  #informacion {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -470,7 +497,14 @@ Breakpoints utilizados:
         grid-template-columns: 1fr;
   }
   .card-index-cards {
-    width: 100%;
+    width: 90%;
+  }
+  .section__titulo {
+    font-size: 1.5rem;
+  }
+  #informacion {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -483,7 +517,7 @@ Breakpoints utilizados:
   width: 100%;
   height: auto;
   border-top: solid #4d4a4a;
-  background-color: #dbdbdb;
+  background-color: #010438;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -519,9 +553,11 @@ Breakpoints utilizados:
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: Arial, sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 10px;
-  left: 0;
 }
 
 .footer__nav {
@@ -605,6 +641,7 @@ Breakpoints utilizados:
 
 .footer__rights {
   width: 100%;
+  color: blanchedalmond;
   text-align: center;
 }
 
@@ -621,6 +658,8 @@ Breakpoints utilizados:
   border-radius: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 /*MEDIA QUERIES 
@@ -710,7 +749,7 @@ Breakpoints utilizados:
 }
 
 .combos {
-  margin: 10px;
+  margin: auto;
   padding: 10px;
   width: 90%;
   height: auto;
@@ -749,18 +788,17 @@ Breakpoints utilizados:
 }
 
 .inicioresenas {
-  background-color: #1E26EB;
   width: 65%;
   margin: auto;
 }
 
 .viajeros {
-  margin: 0%;
+  margin: auto;
   padding: 2%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -807,6 +845,7 @@ Breakpoints utilizados:
           align-items: center;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5rem;
+  color: blanchedalmond;
 }
 
 .seccionReseñas label {
@@ -820,6 +859,10 @@ Breakpoints utilizados:
 
 .seccionReseñas input {
   border-radius: 20px;
+}
+
+.botonenviar {
+  grid-column: 1 / -1;
 }
 
 .reseña {
@@ -857,6 +900,7 @@ Breakpoints utilizados:
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    justify-items: center;
   }
 }
 

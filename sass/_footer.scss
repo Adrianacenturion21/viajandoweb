@@ -5,7 +5,7 @@
     width: 100%;
     height: auto;
     border-top: solid rgb(77, 74, 74);
-    background-color: rgb(219, 219, 219);
+    background-color: #010438;
     flex-direction: column;
     align-items: center;
 }
@@ -23,10 +23,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // align-items: center;
-    font-family: Arial, sans-serif;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
-    left: 0;
+    
 }
 .footer__nav {
     padding: 10px;
@@ -102,6 +102,6 @@
 }
 .footer__rights {
     width: 100%;
-    // background-color: rgb(121, 118, 118);
+    color: blanchedalmond;
     text-align: center;
 }

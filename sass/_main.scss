@@ -1,5 +1,5 @@
 .main {
-    margin-bottom: 15px;
+    background-image:url(../imagenes/fondoweb.jpg) ;
 
 }
 
@@ -27,10 +27,10 @@
 
 }
 .intro__texto {
-    font-family:'Arial Narrow Bold', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight:normal;
     font-size: 2rem;
-    color:#1E26EB;
+    color:white;
     
     
 }
@@ -95,6 +95,7 @@
     margin-top: 15px;
     padding: 1%;
     background-color: #1E26EB;
+    border: solid 1px white;
     width: 100%;
     height: auto;
     
@@ -112,9 +113,11 @@
 /*SECCION CARDS ANIMADAS INDEX*/
 
 .seccionCards {
-    margin: 20px;
-    padding: 50px;
     width: 90%;
+    margin: auto;
+    padding: 0;
+    // width: 100%;
+    // height: 100%;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3,1fr);
@@ -125,13 +128,14 @@
     
     width: 380px;
     height: 410px;
+    // width: 100%;
+    // height: 100%;
     margin: 2%;
     background-color: ghostwhite;
     display: inline-block;
     background-size: cover;
     position: relative;
     transition: all 0.4s ease-out;
-    overflow: hidden;
     color: #FE0057;
     font-family: sans-serif;
     text-align: center; 
@@ -141,6 +145,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 0;
@@ -151,13 +156,15 @@
     position: absolute;
     padding: 30px;
     height: calc(100% - 60px); 
+    
 }
   
 .card-index-cards h1 {
     border: none;
     border-radius: 2px;
     background-color: ghostwhite;
-    margin: 0; 
+    margin: 0;
+    
 }
   
 .card-index-cards h2 {
@@ -197,11 +204,24 @@
     opacity: 1; 
 }
 
-/*Estilos Bootstrap div Informacion*/
-.container {
-    margin-top: 5%;
-    margin-left: 1%;
+
+/*Estilos Informacion*/
+#informacion {
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
+
+.card {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
 
 
 /*MEDIA QUERIES 
@@ -225,7 +245,9 @@ Breakpoints utilizados:
         width: 290px;
         height: 400px;
     }
-
+    #informacion {
+        grid-template-columns: repeat(2, 1fr);
+    }
        
 }
 
@@ -243,6 +265,12 @@ Breakpoints utilizados:
     width: 260px;
     height: 300px;
    }
+   .section__titulo {
+    font-size: 1.5rem;
+    }
+    #informacion {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -252,15 +280,18 @@ Breakpoints utilizados:
     background-attachment: scroll;
     }
     .seccionCards {
-        // max-width: 480px;
         display: grid;
         grid-template-columns: 1fr;
     }
     .card-index-cards {
-    // width: 220px;
-    // height: 280px;
-        width: 100%;
+        width: 90%;
    }
+   .section__titulo {
+    font-size: 1.5rem;
+    }
+    #informacion {
+        grid-template-columns: repeat(1, 1fr);
+    }
    
 }
 

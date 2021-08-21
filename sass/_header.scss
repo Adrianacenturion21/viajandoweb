@@ -1,5 +1,5 @@
 .header {
-    background-color: ghostwhite;
+    background-color: white;
     height: auto;
     width: 100%;
     display: flex;
@@ -45,15 +45,16 @@
  
  .navbar__nav__item {
      padding: 5px 10px;
-     font-family:Arial, Helvetica, sans-serif;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      font-size: 1.2rem;
-     font-weight: bold;
+     font-weight: bolder;
      color: #1E26EB;
+     cursor: pointer;
     
  }
  
  .navbar__nav__item:hover {
-     background-color: #19D3DB;
+     background-color: #47f4fa;
  }
  
  .navbar__nav__item--submenu {
@@ -136,6 +137,9 @@ Breakpoints utilizados:
    .menuResponsive {
        width: 100%;
        left: 0;
+   }
+   .header__buscador {
+       display: none;
    }
    
 }
