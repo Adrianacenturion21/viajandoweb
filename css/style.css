@@ -347,13 +347,13 @@ Breakpoints utilizados:
   color: #FE0057;
   font-family: sans-serif;
   text-align: center;
+  overflow: hidden;
 }
 
 .card-index-cards img {
   height: 100%;
   width: 100%;
   position: absolute;
-  overflow: hidden;
   top: 0;
   left: 0;
   z-index: 0;
@@ -756,14 +756,20 @@ Breakpoints utilizados:
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  padding: 15px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .combos__cards {
   width: 230px;
   height: 280px;
+}
+
+@media screen and (max-width: 1400px) {
+  .combos {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media screen and (max-width: 1024px) {
